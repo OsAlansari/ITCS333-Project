@@ -2165,3 +2165,187 @@ Tcp port: 0  Unix socket: (null)
 Time		    Id Command	Argument
 241201 12:57:08	     3 Connect	Admin@localhost on ProjectDB using Socket
 		     3 Quit	
+241201 13:00:22	     4 Connect	Admin@localhost on  using Socket
+		     4 Query	SET NAMES utf8mb4
+		     4 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     4 Init DB	projectdb
+		     4 Query	SHOW TABLE STATUS LIKE 'users'
+		     4 Query	SHOW INDEX FROM `users`
+		     4 Query	SHOW FULL COLUMNS FROM `users`
+		     4 Query	SHOW CREATE TABLE `users`
+		     4 Query	SELECT *
+FROM `users`
+LIMIT 50
+		     4 Query	SHOW WARNINGS
+		     4 Init DB	projectdb
+		     4 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     4 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     4 Quit	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 13:19:29	     3 Connect	runner@localhost on  using Socket
+		     3 Quit	
+		     4 Connect	runner@localhost on  using Socket
+		     4 Query	CREATE DATABASE IF NOT EXISTS ProjectDB
+		     4 Query	CREATE USER IF NOT EXISTS 'Admin'@'localhost' IDENTIFIED BY '123123'
+		     4 Query	GRANT ALL PRIVILEGES ON ProjectDB.* TO 'Admin'@'localhost'
+		     4 Query	FLUSH PRIVILEGES
+		     4 Quit	
+		     5 Connect	runner@localhost on  using Socket
+		     5 Query	SHOW VARIABLES LIKE 'pid_file'
+		     5 Shutdown	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 13:40:05	     3 Connect	runner@localhost on  using Socket
+		     3 Quit	
+		     4 Connect	runner@localhost on  using Socket
+		     4 Query	CREATE DATABASE IF NOT EXISTS ProjectDB
+		     4 Query	CREATE USER IF NOT EXISTS 'Admin'@'localhost' IDENTIFIED BY '123123'
+		     4 Query	GRANT ALL PRIVILEGES ON ProjectDB.* TO 'Admin'@'localhost'
+		     4 Query	FLUSH PRIVILEGES
+		     4 Quit	
+		     5 Connect	runner@localhost on  using Socket
+		     5 Query	SHOW VARIABLES LIKE 'pid_file'
+		     5 Shutdown	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 13:41:01	     3 Connect	Admin@localhost on  using Socket
+		     3 Query	SET NAMES utf8mb4
+		     3 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     3 Init DB	projectdb
+		     3 Query	SELECT TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME
+		     3 Query	SELECT @@default_storage_engine
+		     3 Query	SHOW COLLATION
+		     3 Query	SHOW CREATE DATABASE `ProjectDB`
+		     3 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     3 Query	SELECT ROUTINE_NAME AS SPECIFIC_NAME, ROUTINE_NAME, ROUTINE_TYPE, DTD_IDENTIFIER FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA = 'ProjectDB'
+		     3 Query	SHOW EVENTS
+		     3 Init DB	projectdb
+		     3 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     3 Quit	
+241201 13:41:02	     4 Connect	Admin@localhost on  using Socket
+		     4 Query	SET NAMES utf8mb4
+		     4 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     4 Init DB	projectdb
+		     4 Query	SHOW TABLE STATUS
+		     4 Quit	
+241201 13:41:14	     5 Connect	Admin@localhost on  using Socket
+		     5 Query	SET NAMES utf8mb4
+		     5 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     5 Init DB	projectdb
+		     5 Query	SHOW FULL COLUMNS FROM `users`
+		     5 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		     5 Query	SHOW INDEX FROM `users`
+		     5 Query	SHOW CREATE TABLE `users`
+		     5 Query	SHOW TRIGGERS LIKE 'users'
+		     5 Init DB	projectdb
+		     5 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     5 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     5 Quit	
+241201 13:41:17	     6 Connect	Admin@localhost on  using Socket
+		     6 Query	SET NAMES utf8mb4
+		     6 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     6 Init DB	projectdb
+		     6 Query	SHOW TABLE STATUS LIKE 'users'
+		     6 Query	SHOW INDEX FROM `users`
+		     6 Query	SHOW FULL COLUMNS FROM `users`
+		     6 Query	SHOW CREATE TABLE `users`
+		     6 Query	SELECT *
+FROM `users`
+LIMIT 50
+		     6 Query	SHOW WARNINGS
+		     6 Init DB	projectdb
+		     6 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     6 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     6 Quit	
+241201 13:41:55	     7 Connect	Admin@localhost on ProjectDB using Socket
+		     7 Quit	
+241201 13:42:46	     8 Connect	Admin@localhost on ProjectDB using Socket
+		     8 Query	SELECT * FROM users WHERE email = '12312312@stu.uob.edu.bh'
+		     8 Query	INSERT INTO users (first_name, last_name, email, password) VALUES ('O', 'A', '12312312@stu.uob.edu.bh', '$2y$10$ZLoA8CFtHhlcGyTDC9VJbeiko0Db4358ekh3vorHe3tItuJrsgPua')
+		     8 Query	SELECT id FROM users WHERE email = '12312312@stu.uob.edu.bh'
+		     8 Quit	
+241201 13:42:59	     9 Connect	Admin@localhost on ProjectDB using Socket
+		     9 Query	SELECT * FROM users WHERE id = '4'
+		     9 Query	UPDATE users SET profile_picture = 'https://avatar.iran.liara.run/public?540' WHERE id = '4'
+		     9 Quit	
+241201 13:43:02	    10 Connect	Admin@localhost on ProjectDB using Socket
+		    10 Query	SELECT * FROM users WHERE id = '4'
+		    10 Quit	
+241201 13:43:15	    11 Connect	Admin@localhost on  using Socket
+		    11 Query	SET NAMES utf8mb4
+		    11 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    11 Init DB	projectdb
+		    11 Query	SHOW TABLE STATUS LIKE 'users'
+		    11 Query	SHOW INDEX FROM `users`
+		    11 Query	SHOW FULL COLUMNS FROM `users`
+		    11 Query	SHOW CREATE TABLE `users`
+		    11 Query	SELECT *
+FROM `users`
+LIMIT 50
+		    11 Query	SHOW WARNINGS
+		    11 Init DB	projectdb
+		    11 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    11 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    11 Quit	
+241201 13:43:37	    12 Connect	Admin@localhost on ProjectDB using Socket
+		    12 Quit	
+241201 13:45:21	    13 Connect	Admin@localhost on  using Socket
+		    13 Query	SET NAMES utf8mb4
+		    13 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    13 Init DB	projectdb
+		    13 Query	SELECT TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME
+		    13 Query	SELECT @@default_storage_engine
+		    13 Query	SHOW COLLATION
+		    13 Query	SHOW CREATE DATABASE `ProjectDB`
+		    13 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    13 Query	SELECT ROUTINE_NAME AS SPECIFIC_NAME, ROUTINE_NAME, ROUTINE_TYPE, DTD_IDENTIFIER FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA = 'ProjectDB'
+		    13 Query	SHOW EVENTS
+		    13 Init DB	projectdb
+		    13 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    13 Quit	
+241201 13:45:22	    14 Connect	Admin@localhost on  using Socket
+		    14 Query	SET NAMES utf8mb4
+		    14 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    14 Init DB	projectdb
+		    14 Query	SHOW TABLE STATUS
+		    14 Quit	
+241201 13:45:54	    15 Connect	Admin@localhost on  using Socket
+		    15 Query	SET NAMES utf8mb4
+		    15 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    15 Init DB	projectdb
+		    15 Query	SHOW FULL COLUMNS FROM `users`
+		    15 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		    15 Query	SHOW INDEX FROM `users`
+		    15 Query	SHOW CREATE TABLE `users`
+		    15 Query	SHOW TRIGGERS LIKE 'users'
+		    15 Init DB	projectdb
+		    15 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    15 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    15 Quit	
+241201 13:46:03	    16 Connect	Admin@localhost on  using Socket
+		    16 Query	SET NAMES utf8mb4
+		    16 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    16 Init DB	projectdb
+		    16 Query	SELECT TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME
+		    16 Query	SELECT @@default_storage_engine
+		    16 Query	SHOW COLLATION
+		    16 Query	SHOW CREATE DATABASE `ProjectDB`
+		    16 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    16 Query	SELECT ROUTINE_NAME AS SPECIFIC_NAME, ROUTINE_NAME, ROUTINE_TYPE, DTD_IDENTIFIER FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA = 'ProjectDB'
+		    16 Query	SHOW EVENTS
+		    16 Init DB	projectdb
+		    16 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    16 Quit	
+241201 13:46:04	    17 Connect	Admin@localhost on  using Socket
+		    17 Query	SET NAMES utf8mb4
+		    17 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    17 Init DB	projectdb
+		    17 Query	SHOW TABLE STATUS
+		    17 Quit	
