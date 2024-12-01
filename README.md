@@ -1,4 +1,4 @@
-# CS333-Project
+# ITCS333-Project
 This repository contains the HTML, CSS, PHP & JS files with our code for the project.
 
 ## Done by  :
