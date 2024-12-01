@@ -33,7 +33,7 @@ $isLoggedIn = isset($_SESSION['user_id']);
         <?php if ($isLoggedIn): ?>
             <p>You are logged in. Access your <a href="profile.php">profile</a>.</p>
         <?php else: ?>
-            <p>Please log in or register to access more features. Test</p>
+            <p>Please log in or register to access more features.</p>
         <?php endif; ?>
     </main>
 </body>
