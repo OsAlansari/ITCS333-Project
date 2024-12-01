@@ -2349,3 +2349,107 @@ LIMIT 50
 		    17 Init DB	projectdb
 		    17 Query	SHOW TABLE STATUS
 		    17 Quit	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 14:13:11	     3 Connect	runner@localhost on  using Socket
+		     3 Quit	
+		     4 Connect	runner@localhost on  using Socket
+		     4 Query	CREATE DATABASE IF NOT EXISTS ProjectDB
+		     4 Query	CREATE USER IF NOT EXISTS 'Admin'@'localhost' IDENTIFIED BY '123123'
+		     4 Query	GRANT ALL PRIVILEGES ON ProjectDB.* TO 'Admin'@'localhost'
+241201 14:13:12	     4 Query	FLUSH PRIVILEGES
+		     4 Quit	
+		     5 Connect	runner@localhost on  using Socket
+		     5 Query	SHOW VARIABLES LIKE 'pid_file'
+		     5 Shutdown	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 14:13:20	     3 Connect	Admin@localhost on ProjectDB using Socket
+		     3 Quit	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 14:14:23	     3 Connect	runner@localhost on  using Socket
+		     3 Quit	
+		     4 Connect	runner@localhost on  using Socket
+		     4 Query	CREATE DATABASE IF NOT EXISTS ProjectDB
+		     4 Query	CREATE USER IF NOT EXISTS 'Admin'@'localhost' IDENTIFIED BY '123123'
+		     4 Query	GRANT ALL PRIVILEGES ON ProjectDB.* TO 'Admin'@'localhost'
+		     4 Query	FLUSH PRIVILEGES
+		     4 Quit	
+		     5 Connect	runner@localhost on  using Socket
+		     5 Query	SHOW VARIABLES LIKE 'pid_file'
+		     5 Shutdown	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 14:14:29	     3 Connect	Admin@localhost on ProjectDB using Socket
+		     3 Quit	
+241201 14:15:20	     4 Connect	Admin@localhost on ProjectDB using Socket
+		     4 Query	SELECT * FROM users WHERE email = '12345678@stu.uob.edu.bh'
+		     4 Query	INSERT INTO users (first_name, last_name, email, password) VALUES ('test', 'test', '12345678@stu.uob.edu.bh', '$2y$10$J8HTVxDN2zx055AOxZ/c7u6AuFuNg1XMilQ4BQWsgBj9qsCbZKTsi')
+		     4 Query	SELECT id FROM users WHERE email = '12345678@stu.uob.edu.bh'
+		     4 Quit	
+241201 14:15:31	     5 Connect	Admin@localhost on  using Socket
+		     5 Query	SET NAMES utf8mb4
+		     5 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     5 Init DB	projectdb
+		     5 Query	SHOW TABLE STATUS LIKE 'users'
+		     5 Query	SHOW INDEX FROM `users`
+		     5 Query	SHOW FULL COLUMNS FROM `users`
+		     5 Query	SHOW CREATE TABLE `users`
+		     5 Query	SELECT *
+FROM `users`
+LIMIT 50
+		     5 Query	SHOW WARNINGS
+		     5 Init DB	projectdb
+		     5 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     5 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     5 Quit	
+241201 14:15:34	     6 Connect	Admin@localhost on  using Socket
+		     6 Query	SET NAMES utf8mb4
+		     6 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     6 Init DB	projectdb
+		     6 Query	SHOW FULL COLUMNS FROM `users`
+		     6 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		     6 Query	SHOW INDEX FROM `users`
+		     6 Query	SHOW CREATE TABLE `users`
+		     6 Query	SHOW TRIGGERS LIKE 'users'
+		     6 Init DB	projectdb
+		     6 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     6 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     6 Quit	
+241201 14:15:40	     7 Connect	Admin@localhost on  using Socket
+		     7 Query	SET NAMES utf8mb4
+		     7 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     7 Init DB	projectdb
+		     7 Query	SHOW FULL COLUMNS FROM `users`
+		     7 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		     7 Query	SHOW INDEX FROM `users`
+		     7 Query	SHOW CREATE TABLE `users`
+		     7 Query	SHOW TRIGGERS LIKE 'users'
+		     7 Init DB	projectdb
+		     7 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     7 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     7 Quit	
+241201 14:16:20	     8 Connect	Admin@localhost on ProjectDB using Socket
+		     8 Quit	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241201 14:25:23	     3 Connect	runner@localhost on  using Socket
+		     3 Quit	
+		     4 Connect	runner@localhost on  using Socket
+		     4 Query	CREATE DATABASE IF NOT EXISTS ProjectDB
+		     4 Query	CREATE USER IF NOT EXISTS 'Admin'@'localhost' IDENTIFIED BY '123123'
+		     4 Query	GRANT ALL PRIVILEGES ON ProjectDB.* TO 'Admin'@'localhost'
+		     4 Query	FLUSH PRIVILEGES
+		     4 Quit	
+		     5 Connect	runner@localhost on  using Socket
+		     5 Query	SHOW VARIABLES LIKE 'pid_file'
+		     5 Shutdown	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
