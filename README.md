@@ -9,5 +9,5 @@ This repository contains the HTML, CSS, PHP & JS files with our code for the pro
   Omar hany mohamed     20192186
 
 ## Importenet links:
-  * Home page: https://43d77ef7-73e8-49a8-9c48-b3b4f0a9c5ba-00-4b0m2eq8r67e.sisko.replit.dev/
-  * Adminer: https://43d77ef7-73e8-49a8-9c48-b3b4f0a9c5ba-00-4b0m2eq8r67e.sisko.replit.dev/adminer.php
+  * [Home page] (https://43d77ef7-73e8-49a8-9c48-b3b4f0a9c5ba-00-4b0m2eq8r67e.sisko.replit.dev/)
+  * [Adminer] (https://43d77ef7-73e8-49a8-9c48-b3b4f0a9c5ba-00-4b0m2eq8r67e.sisko.replit.dev/adminer.php)
