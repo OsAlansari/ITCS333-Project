@@ -2486,3 +2486,330 @@ Time		    Id Command	Argument
 /nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
 Tcp port: 0  Unix socket: (null)
 Time		    Id Command	Argument
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241202  9:25:11	     3 Connect	runner@localhost on  using Socket
+		     3 Quit	
+		     4 Connect	runner@localhost on  using Socket
+		     4 Query	CREATE DATABASE IF NOT EXISTS ProjectDB
+		     4 Query	CREATE USER IF NOT EXISTS 'Admin'@'localhost' IDENTIFIED BY '123123'
+		     4 Query	GRANT ALL PRIVILEGES ON ProjectDB.* TO 'Admin'@'localhost'
+		     4 Query	FLUSH PRIVILEGES
+		     4 Quit	
+		     5 Connect	runner@localhost on  using Socket
+		     5 Query	SHOW VARIABLES LIKE 'pid_file'
+		     5 Shutdown	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241202  9:25:51	     3 Connect	Admin@localhost on  using Socket
+		     3 Query	SET NAMES utf8mb4
+		     3 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     3 Init DB	projectdb
+		     3 Query	SELECT TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME
+		     3 Query	SELECT @@default_storage_engine
+		     3 Query	SHOW COLLATION
+		     3 Query	SHOW CREATE DATABASE `ProjectDB`
+		     3 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     3 Query	SELECT ROUTINE_NAME AS SPECIFIC_NAME, ROUTINE_NAME, ROUTINE_TYPE, DTD_IDENTIFIER FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA = 'ProjectDB'
+		     3 Query	SHOW EVENTS
+		     3 Init DB	projectdb
+		     3 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     3 Quit	
+		     4 Connect	Admin@localhost on  using Socket
+		     4 Query	SET NAMES utf8mb4
+		     4 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     4 Init DB	projectdb
+		     4 Query	SHOW TABLE STATUS
+		     4 Quit	
+241202  9:25:57	     5 Connect	Admin@localhost on  using Socket
+		     5 Query	SET NAMES utf8mb4
+		     5 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     5 Init DB	projectdb
+		     5 Query	SHOW FULL COLUMNS FROM `users`
+		     5 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		     5 Query	SHOW INDEX FROM `users`
+		     5 Query	SHOW CREATE TABLE `users`
+		     5 Query	SHOW TRIGGERS LIKE 'users'
+		     5 Init DB	projectdb
+		     5 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     5 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     5 Quit	
+241202  9:26:04	     6 Connect	Admin@localhost on  using Socket
+		     6 Query	SET NAMES utf8mb4
+		     6 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     6 Init DB	projectdb
+		     6 Init DB	projectdb
+		     6 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     6 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     6 Quit	
+241202  9:26:06	     7 Connect	Admin@localhost on  using Socket
+		     7 Query	SET NAMES utf8mb4
+		     7 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     7 Init DB	projectdb
+		     7 Query	SHOW FULL COLUMNS FROM `users`
+		     7 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		     7 Query	SHOW INDEX FROM `users`
+		     7 Query	SHOW CREATE TABLE `users`
+		     7 Query	SHOW TRIGGERS LIKE 'users'
+		     7 Init DB	projectdb
+		     7 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     7 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     7 Quit	
+241202  9:26:10	     8 Connect	Admin@localhost on  using Socket
+		     8 Query	SET NAMES utf8mb4
+		     8 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     8 Init DB	projectdb
+		     8 Query	SHOW FULL COLUMNS FROM `users`
+		     8 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		     8 Query	SHOW INDEX FROM `users`
+		     8 Query	SHOW CREATE TABLE `users`
+		     8 Query	SHOW TRIGGERS LIKE 'users'
+		     8 Init DB	projectdb
+		     8 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     8 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     8 Quit	
+241202  9:26:13	     9 Connect	Admin@localhost on  using Socket
+		     9 Query	SET NAMES utf8mb4
+		     9 Query	SET sql_quote_show_create = 1, autocommit = 1
+		     9 Init DB	projectdb
+		     9 Query	SELECT TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME
+		     9 Query	SELECT @@default_storage_engine
+		     9 Query	SHOW COLLATION
+		     9 Query	SHOW CREATE DATABASE `ProjectDB`
+		     9 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		     9 Query	SELECT ROUTINE_NAME AS SPECIFIC_NAME, ROUTINE_NAME, ROUTINE_TYPE, DTD_IDENTIFIER FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA = 'ProjectDB'
+		     9 Query	SHOW EVENTS
+		     9 Init DB	projectdb
+		     9 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		     9 Quit	
+		    10 Connect	Admin@localhost on  using Socket
+		    10 Query	SET NAMES utf8mb4
+		    10 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    10 Init DB	projectdb
+		    10 Query	SHOW TABLE STATUS
+		    10 Quit	
+241202  9:26:19	    11 Connect	Admin@localhost on  using Socket
+		    11 Query	SET NAMES utf8mb4
+		    11 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    11 Init DB	projectdb
+		    11 Query	DROP TABLE `users`
+		    11 Query	SHOW WARNINGS
+		    11 Quit	
+		    12 Connect	Admin@localhost on  using Socket
+		    12 Query	SET NAMES utf8mb4
+		    12 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    12 Init DB	projectdb
+		    12 Query	SELECT TABLE_NAME, TABLE_TYPE FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY TABLE_NAME
+		    12 Query	SELECT ROUTINE_NAME AS SPECIFIC_NAME, ROUTINE_NAME, ROUTINE_TYPE, DTD_IDENTIFIER FROM information_schema.ROUTINES WHERE ROUTINE_SCHEMA = 'ProjectDB'
+		    12 Query	SHOW EVENTS
+		    12 Init DB	projectdb
+		    12 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    12 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    12 Quit	
+241202  9:26:21	    13 Connect	Admin@localhost on  using Socket
+		    13 Query	SET NAMES utf8mb4
+		    13 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    13 Init DB	projectdb
+		    13 Init DB	projectdb
+		    13 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    13 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    13 Quit	
+241202  9:26:29	    14 Connect	Admin@localhost on  using Socket
+		    14 Query	SET NAMES utf8mb4
+		    14 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    14 Init DB	projectdb
+		    15 Connect	Admin@localhost on  using Socket
+		    15 Query	SET NAMES utf8mb4
+		    15 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    15 Init DB	projectdb
+		    14 Query	-- phpMyAdmin SQL Dump
+-- version 5.2.1
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Dec 01, 2024 at 05:52 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO"
+		    14 Query	START TRANSACTION
+		    14 Query	SET time_zone = "+00:00"
+		    14 Query	/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */
+		    14 Query	/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */
+		    14 Query	/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */
+		    14 Query	/*!40101 SET NAMES utf8mb4 */
+		    14 Query	--
+-- Database: `user_management`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `rooms`
+--
+
+CREATE TABLE `rooms` (
+  `id` int(11) NOT NULL,
+  `name` varchar(100) DEFAULT NULL,
+  `capacity` int(11) DEFAULT NULL,
+  `description` text NOT NULL,
+  `equipment` text NOT NULL,
+  `location` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+		    14 Query	-- --------------------------------------------------------
+
+--
+-- Table structure for table `room_timeslots`
+--
+
+CREATE TABLE `room_timeslots` (
+  `id` int(11) NOT NULL,
+  `room_id` int(11) NOT NULL,
+  `start_time` datetime NOT NULL,
+  `end_time` datetime NOT NULL,
+  `is_booked` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+		    14 Query	-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` varchar(255) NOT NULL,
+  `profile_picture` varchar(255) DEFAULT NULL,
+  `first_name` varchar(50) NOT NULL,
+  `last_name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci
+		    14 Query	--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `email`, `password`, `profile_picture`, `first_name`, `last_name`) VALUES
+(1, '20198028@stu.uob.edu.bh', '$2y$10$LKK2zccKXvbTRIfJ3663Ve5tKzYzdRfbSI7IjkzkYm9lF.jHklZJ6', 'uploads/GJv49FTNLGeKMT5aVMidSdsnXyu4KyQ8w4wrYoc8_nBfitgROIDlSSFzEROlDEo_IrSMh6a3FynN72pOj6zj19LwZo6z90dqoGAO=e365-pa-nu-s0.webp', '', ''),
+(2, '20201234@stu.uob.edu.bh', '$2y$10$huDr7RudUb5co0BgyXuXIOEVYp1z7x2IPCFrcfilGnrfOk5zsy4ru', NULL, '', ''),
+(3, '20198027@stu.uob.edu.bh', '$2y$10$YBvVSyABOa069FXXJeLvMuxJum43BPIvEfrbaCo4XGrrreeJmnkyy', NULL, 'muhanna', 'jamal'),
+(4, '20198021@stu.uob.edu.bh', '$2y$10$4.a3A0laDpp5PGwHwiQe6.1SWxzvH2eqnjLiUQgOv0rdeZ0fOoFhO', NULL, 'muhanna', 'jamal'),
+(5, '12345678@stu.uob.edu.bh', '$2y$10$M.xA71l3SXbijHJyz2/6de9l38FLVPwdkc92oYtfSNOFJIt9y.m1G', NULL, 'muhanna', 'ahmed'),
+(6, '87654321@stu.uob.edu.bh', '$2y$10$2ognlAZ3SgsxjCvUXR6ASeUc.Xmx2dZVY520CfSnYzALrZ/RPBlMi', NULL, 'muhanna', 'noor'),
+(7, '11114444@stu.uob.edu.bh', '$2y$10$kcg2tzOsCyJJbuE7tsK1feH7tOWoQWBUxz/ojACqVJpdjmrb/qSsq', 'uploads/Screenshot 2024-11-30 153318.png', 'muhanna', 'ahmed')
+		    14 Query	--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `rooms`
+--
+ALTER TABLE `rooms`
+  ADD PRIMARY KEY (`id`)
+		    14 Query	--
+-- Indexes for table `room_timeslots`
+--
+ALTER TABLE `room_timeslots`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `room_id` (`room_id`)
+		    14 Query	--
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `eamil` (`email`)
+241202  9:26:30	    14 Query	--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `rooms`
+--
+ALTER TABLE `rooms`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT
+		    14 Query	--
+-- AUTO_INCREMENT for table `room_timeslots`
+--
+ALTER TABLE `room_timeslots`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT
+		    14 Query	--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8
+		    14 Query	--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `room_timeslots`
+--
+ALTER TABLE `room_timeslots`
+  ADD CONSTRAINT `room_timeslots_ibfk_1` FOREIGN KEY (`room_id`) REFERENCES `rooms` (`id`)
+		    14 Query	COMMIT
+		    14 Query	/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */
+		    14 Query	/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */
+		    14 Query	/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */
+		    14 Init DB	projectdb
+		    14 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    14 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    15 Quit	
+		    14 Quit	
+241202  9:26:35	    16 Connect	Admin@localhost on  using Socket
+		    16 Query	SET NAMES utf8mb4
+		    16 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    16 Init DB	projectdb
+		    16 Query	SHOW FULL COLUMNS FROM `rooms`
+		    16 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'rooms'
+		    16 Query	SHOW INDEX FROM `rooms`
+		    16 Query	SHOW CREATE TABLE `rooms`
+		    16 Query	SHOW TRIGGERS LIKE 'rooms'
+		    16 Init DB	projectdb
+		    16 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    16 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    16 Quit	
+241202  9:26:37	    17 Connect	Admin@localhost on  using Socket
+		    17 Query	SET NAMES utf8mb4
+		    17 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    17 Init DB	projectdb
+		    17 Query	SHOW FULL COLUMNS FROM `room_timeslots`
+		    17 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'room_timeslots'
+		    17 Query	SHOW INDEX FROM `room_timeslots`
+		    17 Query	SHOW CREATE TABLE `room_timeslots`
+		    17 Query	SHOW TRIGGERS LIKE 'room\\_timeslots'
+		    17 Init DB	projectdb
+		    17 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    17 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    17 Quit	
+241202  9:26:39	    18 Connect	Admin@localhost on  using Socket
+		    18 Query	SET NAMES utf8mb4
+		    18 Query	SET sql_quote_show_create = 1, autocommit = 1
+		    18 Init DB	projectdb
+		    18 Query	SHOW FULL COLUMNS FROM `users`
+		    18 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() AND TABLE_NAME = 'users'
+		    18 Query	SHOW INDEX FROM `users`
+		    18 Query	SHOW CREATE TABLE `users`
+		    18 Query	SHOW TRIGGERS LIKE 'users'
+		    18 Init DB	projectdb
+		    18 Query	SELECT TABLE_NAME AS Name, ENGINE AS Engine, TABLE_COMMENT AS Comment FROM information_schema.TABLES WHERE TABLE_SCHEMA = DATABASE() ORDER BY Name
+		    18 Query	SET STATEMENT max_statement_time=2 FOR SELECT SCHEMA_NAME FROM information_schema.SCHEMATA ORDER BY SCHEMA_NAME
+		    18 Quit	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241202  9:47:44	     3 Connect	runner@localhost on  using Socket
+		     3 Quit	
+		     4 Connect	runner@localhost on  using Socket
+		     4 Query	CREATE DATABASE IF NOT EXISTS ProjectDB
+		     4 Query	CREATE USER IF NOT EXISTS 'Admin'@'localhost' IDENTIFIED BY '123123'
+		     4 Query	GRANT ALL PRIVILEGES ON ProjectDB.* TO 'Admin'@'localhost'
+		     4 Query	FLUSH PRIVILEGES
+		     4 Quit	
+		     5 Connect	runner@localhost on  using Socket
+		     5 Query	SHOW VARIABLES LIKE 'pid_file'
+		     5 Shutdown	
+/nix/store/iswl6kainniybjqjc9wb8415sy6xij6d-mariadb-server-10.6.7/bin/mariadbd, Version: 10.6.7-MariaDB-log (MariaDB Server). started with:
+Tcp port: 0  Unix socket: (null)
+Time		    Id Command	Argument
+241202  9:47:57	     3 Connect	Admin@localhost on ProjectDB using Socket
+		     3 Quit	
